@@ -1,0 +1,7 @@
+C:\Users\dromero\source\repos\BudgetConsole\BudgetConsole\obj\Debug\BudgetConsole.csproj.CoreCompileInputs.cache
+C:\Users\dromero\source\repos\BudgetConsole\BudgetConsole\bin\Debug\BudgetConsole.exe.config
+C:\Users\dromero\source\repos\BudgetConsole\BudgetConsole\bin\Debug\BudgetConsole.exe
+C:\Users\dromero\source\repos\BudgetConsole\BudgetConsole\bin\Debug\BudgetConsole.pdb
+C:\Users\dromero\source\repos\BudgetConsole\BudgetConsole\obj\Debug\BudgetConsole.exe
+C:\Users\dromero\source\repos\BudgetConsole\BudgetConsole\obj\Debug\BudgetConsole.pdb
+C:\Users\dromero\source\repos\BudgetConsole\BudgetConsole\obj\Debug\BudgetConsole.csprojAssemblyReference.cache
