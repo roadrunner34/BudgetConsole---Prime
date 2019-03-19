@@ -30,45 +30,52 @@ namespace BudgetConsole
             Console.WriteLine("4. How soon til you can achieve FIRE");
             Thread.Sleep(2000);
 
-            Console.WriteLine("What is your currently monthly after tax income?");
-            float monthlyincome = int.Parse(Console.ReadLine());
-           // not needed yet
-           // exreport.AddExpense(monthlyincome);
+            int choice = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("What are is your Mortgage & Tax payment?  Or if you rent, what is your monthly rent?");
-            float monthlyrent = int.Parse(Console.ReadLine());
+            if (choice == 1)
+                {
 
-            Console.WriteLine("How much are you spending on Groceries?");
-            int groceries = int.Parse(Console.ReadLine());
+                Console.WriteLine("What is your currently monthly after tax income?");
+                float monthlyincome = int.Parse(Console.ReadLine());
+                // not needed yet
+                // exreport.AddExpense(monthlyincome);
 
-            Console.WriteLine("How much are your car related expenses?");
-            int auto = int.Parse(Console.ReadLine());
+                Console.WriteLine("What are is your Mortgage & Tax payment?  Or if you rent, what is your monthly rent?");
+                float monthlyrent = int.Parse(Console.ReadLine());
 
-            //Calculations to find the ratios and lead to output later
-            float totalexpenses = monthlyrent + groceries + auto;
+                Console.WriteLine("How much are you spending on Groceries?");
+                int groceries = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("How much are your car related expenses?");
+                int auto = int.Parse(Console.ReadLine());
+
+                //Calculations to find the ratios and lead to output later
+                float totalexpenses = monthlyrent + groceries + auto;
 
 
-            if (monthlyrent / monthlyincome <= V)
-            {
-                Console.WriteLine("You are doing a good job of keeping your housing payments in line with your budget.");
-            }
-            else
-            {
-                float rentratiopercent = monthlyrent / monthlyincome * 100;
-                float rightrent = V * monthlyincome;
-                Console.WriteLine("It looks like you might be spending too much money on your housing.  Try to keep costs below 28%.  You are at " + rentratiopercent + "%");
-                Console.WriteLine("You want to be spending no more than $" + rightrent + " a month.");
-            }
+                if (monthlyrent / monthlyincome <= V)
+                {
+                    Console.WriteLine("You are doing a good job of keeping your housing payments in line with your budget.");
+                }
+                else
+                {
+                    float rentratiopercent = monthlyrent / monthlyincome * 100;
+                    float rightrent = V * monthlyincome;
+                    Console.WriteLine("It looks like you might be spending too much money on your housing.  Try to keep costs below 28%.  You are at " + rentratiopercent + "%");
+                    Console.WriteLine("You want to be spending no more than $" + rightrent + " a month.");
+                }
 
-           
-            if (totalexpenses < monthlyincome)
-            {
-                Console.WriteLine("It looks like you're looking good for your major purchases.  You are only spending $" +totalexpenses+" a month on auto, rent, and groceries.  While bringing in $"+monthlyincome);
-            }
-            else
-            {
-                Console.WriteLine("You are spending more than you make on major purchases.  You need to either cut spending somewhere or increase your income.");
-            }
+
+                if (totalexpenses < monthlyincome)
+                {
+                    Console.WriteLine("It looks like you're looking good for your major purchases.  You are only spending $" + totalexpenses + " a month on auto, rent, and groceries.  While bringing in $" + monthlyincome);
+                }
+                else
+                {
+                    Console.WriteLine("You are spending more than you make on major purchases.  You need to either cut spending somewhere or increase your income.");
+                }
+
+                }
 
             //if Debug
             if (Debugger.IsAttached== true)
