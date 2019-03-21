@@ -33,9 +33,9 @@ namespace BudgetConsole
             int choice = int.Parse(Console.ReadLine());
             Console.Clear();
             if (choice == 1)
-                {
-                Console.WriteLine("Welcome to the Basic Budget Check "+name+", let's help you determine if the basics of your monthly budget are strong.");
-                Thread.Sleep(1000);
+            {
+                Console.WriteLine("Welcome to the Basic Budget Check " + name + ", let's help you determine if the basics of your monthly budget are strong.");
+                Thread.Sleep(2000);
                 Console.WriteLine("What is your currently monthly after tax income?");
                 float monthlyincome = int.Parse(Console.ReadLine());
                 // not needed yet
@@ -76,12 +76,26 @@ namespace BudgetConsole
                     Console.WriteLine("You are spending more than you make on major purchases.  You need to either cut spending somewhere or increase your income.");
                 }
 
-                }
+            }
 
-            else if (choice ==2)
+            else if (choice == 2)
             {
                 Console.WriteLine("Are you in the market for a new Auto?  Let's find out how much you can afford so that you don't get burdened by payments");
+                Thread.Sleep(2000);
+            }
+
+            else if (choice ==3);
+            {
+                Console.WriteLine("This is to help you determine what total cost of ownership is for your vehicle");
+                Thread.Sleep(2000);
+            }
+
+            else if (choice == 4);
+            {
+                Console.WriteLine("FIRE stands for 'Financial Independence Retire Early'");
                 Thread.Sleep(1000);
+                Console.WriteLine("We all hope that we don't work til we die and that we can spend some years having fun.  This will help you learn how long you have to go");
+
             }
             //if Debug
             if (Debugger.IsAttached== true)
