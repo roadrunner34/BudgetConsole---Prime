@@ -23,18 +23,19 @@ namespace BudgetConsole
            // Expensesreport exreport = new Expensesreport();
 
             Console.WriteLine("Hello " +name+", this app is designed to help you make smart financial choices.");
+            Thread.Sleep(1000);
             Console.WriteLine("Please Choose an option of what you would like to check");
             Console.WriteLine("1. Basic Budget Check");
             Console.WriteLine("2. Auto Loan Calculator");
             Console.WriteLine("3. Auto Ownership Costs");
             Console.WriteLine("4. How soon til you can achieve FIRE");
-            Thread.Sleep(2000);
 
             int choice = int.Parse(Console.ReadLine());
-
+            Console.Clear();
             if (choice == 1)
                 {
-
+                Console.WriteLine("Welcome to the Basic Budget Check "+name+", let's help you determine if the basics of your monthly budget are strong.");
+                Thread.Sleep(1000);
                 Console.WriteLine("What is your currently monthly after tax income?");
                 float monthlyincome = int.Parse(Console.ReadLine());
                 // not needed yet
@@ -77,6 +78,11 @@ namespace BudgetConsole
 
                 }
 
+            else if (choice ==2)
+            {
+                Console.WriteLine("Are you in the market for a new Auto?  Let's find out how much you can afford so that you don't get burdened by payments");
+                Thread.Sleep(1000);
+            }
             //if Debug
             if (Debugger.IsAttached== true)
             { 
