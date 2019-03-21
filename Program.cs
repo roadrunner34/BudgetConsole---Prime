@@ -19,10 +19,10 @@ namespace BudgetConsole
         {
             Console.WriteLine("Hello, what is your name?");
             string name = Console.ReadLine();
-           // Not needed yet
-           // Expensesreport exreport = new Expensesreport();
+            // Not needed yet
+            // Expensesreport exreport = new Expensesreport();
 
-            Console.WriteLine("Hello " +name+", this app is designed to help you make smart financial choices.");
+            Console.WriteLine("Hello " + name + ", this app is designed to help you make smart financial choices.");
             Thread.Sleep(1000);
             Console.WriteLine("Please Choose an option of what you would like to check");
             Console.WriteLine("1. Basic Budget Check");
@@ -84,11 +84,11 @@ namespace BudgetConsole
                 Thread.Sleep(2000);
             }
 
-            else if (choice ==3);
+            else if (choice == 3) ;
             {
                 Console.WriteLine("This is to help you determine what total cost of ownership is for your vehicle");
                 Thread.Sleep(2000);
-            }
+            }           
 
             else if (choice == 4);
             {
