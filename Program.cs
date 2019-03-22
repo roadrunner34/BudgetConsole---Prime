@@ -9,6 +9,8 @@ using System.Timers;
 using System.Xml.Schema;
 using Console = System.Console;
 
+
+
 namespace BudgetConsole
 {
     class Program
@@ -19,9 +21,7 @@ namespace BudgetConsole
         {
             Console.WriteLine("Hello, what is your name?");
             string name = Console.ReadLine();
-            // Not needed yet
-            // Expensesreport exreport = new Expensesreport();
-
+            
             Console.WriteLine("Hello " + name + ", this app is designed to help you make smart financial choices.");
             Thread.Sleep(1000);
             Console.WriteLine("Please Choose an option of what you would like to check");
@@ -38,8 +38,7 @@ namespace BudgetConsole
                 Thread.Sleep(2000);
                 Console.WriteLine("What is your currently monthly after tax income?");
                 float monthlyincome = int.Parse(Console.ReadLine());
-                // not needed yet
-                // exreport.AddExpense(monthlyincome);
+               
 
                 Console.WriteLine("What are is your Mortgage & Tax payment?  Or if you rent, what is your monthly rent?");
                 float monthlyrent = int.Parse(Console.ReadLine());
@@ -84,13 +83,13 @@ namespace BudgetConsole
                 Thread.Sleep(2000);
             }
 
-            else if (choice == 3) ;
+            else if (choice == 3)
             {
                 Console.WriteLine("This is to help you determine what total cost of ownership is for your vehicle");
                 Thread.Sleep(2000);
             }           
 
-            else if (choice == 4);
+            else if (choice == 4)
             {
                 Console.WriteLine("FIRE stands for 'Financial Independence Retire Early'");
                 Thread.Sleep(1000);
