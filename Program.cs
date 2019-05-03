@@ -40,7 +40,7 @@ namespace BudgetConsole
                 float monthlyincome = int.Parse(Console.ReadLine());
                
 
-                Console.WriteLine("What are is your Mortgage & Tax payment?  Or if you rent, what is your monthly rent?");
+                Console.WriteLine("What is your monthly Mortgage & Tax payment?  Or if you rent, what is your monthly rent?");
                 float monthlyrent = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("How much are you spending on Groceries?");
