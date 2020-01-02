@@ -91,7 +91,7 @@ namespace BudgetConsole
 
             else if (choice == 4)
             {
-                Console.WriteLine("FIRE stands for 'Financial Independence Retire Early'");
+                Console.WriteLine("FiRe stands for 'Financial Independence Retire Early'");
                 Thread.Sleep(1000);
                 Console.WriteLine("We all hope that we don't work til we die and that we can spend some years having fun.  This will help you learn how long you have to go");
 
